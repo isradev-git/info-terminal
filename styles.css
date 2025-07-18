@@ -1,13 +1,13 @@
 :root {
-  --main-purple: #8a00c4;
+  --main-purple: #4ecfe0;
   --terminal-bg: #0d0913;
   --panel-bg: #12091b;
   --box-bg: #170f23;
-  --accent-bg: rgba(138, 0, 196, 0.07);
+  --accent-bg: rgba(0, 196, 196, 0.07);
   --text-main: #eae7ff;
-  --text-muted: #a58cdb;
+  --text-muted: #8cd8db;
   --ok: #9dff00;
-  --shadow: 0 0 14px #8a00c433;
+  --shadow: 0 0 14px #00bec433;
   --radius-large: 14px;
   --radius-block: 12px;
   --border-light: 1.5px solid var(--main-purple);
@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .terminal-container {
   width: 99vw;
@@ -51,7 +51,7 @@ body {
   background: var(--box-bg);
   border-bottom: var(--border-light);
   border-radius: var(--radius-large) var(--radius-large) 0 0;
-  box-shadow: 0 2px 25px #8a00c423;
+  box-shadow: 0 2px 25px #00bec423;
 }
 .header-title {
   font-size: 1.1em;
@@ -70,7 +70,7 @@ body {
   background: #180b2c;
   border-radius: 8px;
   padding: 3px 20px;
-  box-shadow: 0 1px 11px #8a00c427;
+  box-shadow: 0 1px 11px #00adc427;
 }
 /* --- PROMPT + TYPEWRITER EN MISMA LÍNEA --- */
 .prompt-typewriter {
@@ -131,7 +131,7 @@ body {
   background: var(--box-bg);
   border: var(--border-light);
   border-radius: var(--radius-block);
-  box-shadow: 0 0 14px #8a00c433;
+  box-shadow: 0 0 14px #00a7c433;
   padding: 22px 25px 14px 24px;
   display: flex;
   flex-direction: column;
@@ -243,7 +243,7 @@ body {
 }
 .social-link {
   color: var(--main-purple);
-  background: rgba(138, 0, 196, 0.13);
+  background: rgba(0, 183, 196, 0.13);
   padding: 5px 14px;
   border-radius: 5px;
   font-weight: 700;
@@ -312,7 +312,7 @@ body {
 .footer-copyright {
   width: 100%;
   text-align: center;
-  color: #8a00c4;
+  color: #4ecfe0;
   background: transparent;
   font-family: "Fira Mono", "Consolas", monospace;
   font-size: 0.98em;
@@ -328,14 +328,14 @@ body {
   position: absolute;
   left: 0; right: 0; top: 110%;
   background: #19122c;
-  border: 1.5px solid #8A00C4;
+  border: 1.5px solid #4ecfe0;
   border-radius: 6px;
   z-index: 22;
   color: #eae7ff;
   font-family: inherit;
   font-size: 1em;
   margin-top: 3px;
-  box-shadow: 0 4px 24px #8A00C4aa;
+  box-shadow: 0 4px 24px #4ecfe0aa;
   padding: 3px 0;
 }
 .suggestion-item {
@@ -344,7 +344,7 @@ body {
   transition: background 0.15s;
 }
 .suggestion-item:hover, .suggestion-item:focus {
-  background: #8A00C4;
+  background: #4ecfe0;
   color: #fff;
 }
 

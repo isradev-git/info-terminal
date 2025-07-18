@@ -99,7 +99,7 @@ input.addEventListener("keydown", function(e) {
   }
   function getHelp() {
     return `
-    <span style="color:#8A00C4"><b>Comandos disponibles:</b></span><br>
+    <span style="color:#4ecfe0"><b>Comandos disponibles:</b></span><br>
     <b>help</b> ............... Muestra esta ayuda<br>
     <b>sobre-mi</b> .......... Información personal<br>
     <b>proyectos</b> ......... Proyectos realizados<br>
@@ -132,7 +132,7 @@ input.addEventListener("keydown", function(e) {
   }
   function getSkills() {
     return `
-      <span style="color:#8A00C4"><b>Habilidades:</b></span><br>
+      <span style="color:#4ecfe0"><b>Habilidades:</b></span><br>
       - Linux avanzado (bash, SSH, permisos, procesos)<br>
       - Seguridad informática y redes<br>
       - Programación web (HTML, CSS, JS, Node.js)<br>
@@ -143,7 +143,7 @@ input.addEventListener("keydown", function(e) {
   }
   function getContacto() {
     return `
-      <span style="color:#8A00C4"><b>Contacto:</b></span><br>
+      <span style="color:#4ecfe0"><b>Contacto:</b></span><br>
       Email: glitchbane [arroba] protonmail.com<br>
       Twitter: <a href="https://twitter.com/glitchbane" target="_blank" class="social-link">twitter.com/glitchbane</a><br>
       Telegram: <a href="https://t.me/glitchbane" target="_blank" class="social-link">@glitchbane</a>
@@ -165,10 +165,10 @@ input.addEventListener("keydown", function(e) {
     return fortunes[Math.floor(Math.random() * fortunes.length)];
   }
   function getWhoami() {
-    return `<span style="color:#8A00C4"><b>glitchbane</b></span>`;
+    return `<span style="color:#4ecfe0"><b>glitchbane</b></span>`;
   }
   function getDate() {
-    return `<span style="color:#8A00C4"><b>Fecha:</b></span> ${new Date().toLocaleString(
+    return `<span style="color:#4ecfe0"><b>Fecha:</b></span> ${new Date().toLocaleString(
       "es-ES"
     )}`;
   }
@@ -247,13 +247,13 @@ input.addEventListener("keydown", function(e) {
     const args = parts.slice(1);
 
     if (command === "clear") {
-      renderOutput("📄", `<span style="color:#8A00C4;">Bloque limpio.</span>`);
+      renderOutput("📄", `<span style="color:#4ecfe0;">Bloque limpio.</span>`);
       return;
     }
     if (command === "exit") {
       renderOutput(
         "TERMINAL",
-        `<span style="color:#8A00C4;">Terminal finalizada. Refresca la página para volver a usarla.</span>`
+        `<span style="color:#4ecfe0;">Terminal finalizada. Refresca la página para volver a usarla.</span>`
       );
       input.disabled = true;
       input.style.opacity = 0.52;
@@ -305,7 +305,7 @@ input.addEventListener("keydown", function(e) {
         history
           .map(
             (x, i) =>
-              `<span style="color:#8A00C4;">${
+              `<span style="color:#4ecfe0;">${
                 i + 1
               }</span> <span style="color:#eae7ff;">${x}</span>`
           )
@@ -319,7 +319,7 @@ input.addEventListener("keydown", function(e) {
         directory
           .map((item) =>
             item.endsWith("/")
-              ? `<span style="color:#8A00C4;font-weight:bold;">${item}</span>`
+              ? `<span style="color:#4ecfe0;font-weight:bold;">${item}</span>`
               : `<span style="color:#a58cdb;">${item}</span>`
           )
           .join("  ")
@@ -341,7 +341,7 @@ input.addEventListener("keydown", function(e) {
       } else {
         renderOutput(
           "ARCHIVO",
-          `<span style="color:#8A00C4;">Archivo no encontrado: <b>${args[0]}</b></span>`
+          `<span style="color:#4ecfe0;">Archivo no encontrado: <b>${args[0]}</b></span>`
         );
       }
       return;
@@ -355,14 +355,14 @@ input.addEventListener("keydown", function(e) {
       if (directory.includes(filename)) {
         renderOutput(
           "TOUCH",
-          `<span style="color:#8A00C4;">El archivo ya existe: <b>${args[0]}</b></span>`
+          `<span style="color:#4ecfe0;">El archivo ya existe: <b>${args[0]}</b></span>`
         );
       } else {
         directory.push(filename);
         virtualFiles[filename] = "Esto es un archivo virtual creado con touch.";
         renderOutput(
           "TOUCH",
-          `<span style="color:#8A00C4;">Archivo <b>${filename}</b> creado (virtualmente).</span>`
+          `<span style="color:#4ecfe0;">Archivo <b>${filename}</b> creado (virtualmente).</span>`
         );
       }
       return;
@@ -390,7 +390,7 @@ input.addEventListener("keydown", function(e) {
     // No reconocido
     renderOutput(
       "COMANDO NO RECONOCIDO",
-      `<span style="color:#8A00C4;">Comando no reconocido: <b>${commandLine}</b></span>`
+      `<span style="color:#4ecfe0;">Comando no reconocido: <b>${commandLine}</b></span>`
     );
   }
 
