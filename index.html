@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>glitchbane.info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="terminal-container">
+      <div class="header-bar">
+        <div class="header-title">glitchbane.info</div>
+        <div class="header-clock" id="header-clock">11:43:00</div>
+      </div>
+      <div class="prompt-typewriter">
+        <span class="prompt">user@glitchabane:~$</span>
+        <span class="typed-cmd" id="typed-cmd"></span>
+        <span class="blinking-cursor" id="blinking-cursor">|</span>
+      </div>
+      <div class="block">
+        <div class="console-line">
+          <span class="console-dot"></span>Iniciando sistema de información de
+          glitchbane...
+        </div>
+        <div class="console-line">
+          <span class="console-dot"></span>Conectando con la base de
+          datos...<span class="console-status">[OK]</span>
+        </div>
+        <div class="console-line">
+          <span class="console-dot"></span>Cargando datos históricos...<span
+            class="console-status"
+            >[OK]</span
+          >
+        </div>
+        <div class="console-line">
+          <span class="console-dot"></span>Sistema listo. Descubre quien soy,
+          que hago y más.
+        </div>
+      </div>
+      <!-- SOLO este div para el contenido dinámico -->
+      <div id="terminal-output"></div>
+      <div class="terminal-functional">
+        <span class="prompt">user@glitchabane:~$</span>
+        <input
+          type="text"
+          class="terminal-input"
+          placeholder="Escribe un comando..."
+          autofocus
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+    </div>
+    <footer class="footer-copyright">
+      &copy; <span id="copyright-year"></span> Israel Zamora
+    </footer>
+    <script src="./js/function.js"></script>
+    <script src="./js/terminal.js"></script>
+  </body>
+</html>
